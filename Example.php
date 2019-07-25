@@ -9,10 +9,10 @@ $ef->setType('users');
 //elasticsearch auto generate a structure map, age is int
 //and born is date, this types are auto created into elasticsearch data mapping
 $data = [
-	'name'=>'Waldemar Neto',
-	'age'=>24,
-	'email'=>'waldemarnt@outlook.com',
-	'born'=>'1990/01/23'
+	'name'=>'Test User',
+	'age'=>21,
+	'email'=>'test@test.com',
+	'born'=>'1993/01/01'
 ];
 
 $ef->setData($data);
@@ -26,10 +26,10 @@ echo $return['_id'].' has been saved <br/>';
 $ef->setId(1);
 
 $editData = [
-	'name'=>'Waldemar Neto',
-	'age'=>24,
-	'email'=>'waldemarnt@outlook.com',
-	'born'=>'1990/01/23'
+	'name'=>'Test User',
+	'age'=>21,
+	'email'=>'test@test.com',
+	'born'=>'1993/01/01'
 ];
 
 $ef->setData($editData);
@@ -57,10 +57,10 @@ echo 'example with filters <br/>';
 
 //example with filters
 $filter = array();
-$filter['term']['name'] = 'waldemar';
+$filter['term']['name'] = 'Test';
 
 $query = array();
-$query['match']['age'] = 24;
+$query['match']['age'] = 21;
 
 $filteredQuery = [
 	'filtered'=>[
