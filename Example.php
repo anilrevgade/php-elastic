@@ -105,3 +105,4 @@ if(isset($filteredBorn['hits']['hits'])){
 		echo $hit['_source']['name'].'<br/>';
 	}
 }
+?>
