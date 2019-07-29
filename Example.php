@@ -1,5 +1,4 @@
 <?php
-
 include 'ElasticFactory.php';
 
 $ef = new ElasticFactory('my_project');
