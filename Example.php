@@ -1,9 +1,6 @@
 <?php
-
 include 'ElasticFactory.php';
-
 $ef = new ElasticFactory('my_project');
-
 $ef->setSize(100);
 $ef->setType('users');
 
